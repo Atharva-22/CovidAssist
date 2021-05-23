@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="BEDASSIST">
+  <meta name="description" content="COVID-19 Beds Available">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Home</title>
+  <!-- <link rel="stylesheet" href="CSS/nicepage.css" media="screen"> -->
+  <link rel="stylesheet" href="CSS/Home.css" media="screen">
+  <link rel="stylesheet" href="CSS/nicepage1.css" media="screen">
+
+
+  <script class="u-script" type="text/javascript" src="JS/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="JS/nicepage.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="JS/selection.js" defer=""></script>
+
+
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+  <style>
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+    }
+
+    .srchor {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 10px;
+      grid-template-areas:
+        ". .";
+    }
+
+    .grid-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      width: 1095px;
+
+      gap: 10px 10px;
+      grid-template-areas:
+        "."
+        "."
+        "."
+        "."
+        "."
+        ".";
+    }
+
+    .grid-list-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 950px;
+      grid-template-rows: 50px 1fr;
+      gap: 15px 0px;
+
+      align-items: center;
+      grid-template-areas:
+        "."
+        ".";
+    }
+  </style>
+
+
+</head>
+
+<body class="u-body">
+
+  <!-- Header -->
+  <header class="u-border-1 u-border-grey-10 u-clearfix u-header" id="sec-77eb">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <nav class="u-menu u-menu-1" data-responsive-from="LG" data-submenu-level="on-click">
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-custom-font u-font-montserrat u-nav u-spacing-0 u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
+                href="/tracker" style="padding: 10px 20px;">COVID-19 Tracker</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
+                style="padding: 10px 20px;">COVID-19 Guidlines</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
+                href="/login" style="padding: 10px 20px;">Admin Section</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+      <h1 class="u-custom-font u-font-montserrat u-text u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-1"
+          href="/" data-page-id="46228991">CovidAssist</a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- Large Screens -->
+  <section class="u-clearfix u-hidden-lg u-hidden-md u-white u-section-1" id="sec-3fe2">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-align-center u-custom-font u-font-montserrat u-large-text u-text u-text-variant u-text-1">Search
+        hospital beds nearby with one click.<br>
+      </p>
+      <!-- Form Div -->
+      <div class="form_input u-align-center u-form u-form-1">
+        <form action="/" method="POST" class="" style="padding: 10px;" source="custom" name="Search">
+
+          <!-- Horizontal Container -->
+          <div class="srchor">
+
+            <!-- Search Box Field 1 -->
+            <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-1">
+              <label for="select-aad6"
+                class="u-custom-font u-font-montserrat u-form-control-hidden u-label u-text-body-color u-label-1">Select</label>
+              <div class="u-form-select-wrapper">
+                <select id="stateSel" name="select1"
+                  class="u-border-1 u-border-grey-25 u-custom-font u-font-montserrat u-grey-5 u-input u-input-rectangle u-radius-17 u-text-palette-5-dark-1 u-input-1">
+                  <option value="Select State">Select State</option>
+
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                  <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Search Box Field 2 -->
+            <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-2">
+              <label for="select-3b76"
+                class="u-custom-font u-font-montserrat u-form-control-hidden u-label u-text-body-color u-label-2">Select</label>
+              <div class="u-form-select-wrapper">
+                <select id="districtSel" name="select2"
+                  class="u-border-1 u-border-grey-25 u-custom-font u-font-montserrat u-grey-5 u-input u-input-rectangle u-radius-17 u-text-palette-5-dark-1 u-input-2">
+                  <option value="Select District">Select District</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                  <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Horizontal End -->
+
+          <div class="u-align-center u-form-group u-form-submit">
+            <a href="#"
+              class="u-border-0 u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-custom-font u-font-montserrat u-hover-custom-color-2 u-radius-26 u-btn-1">SEARCH</a>
+            <input type="submit" value="submit" class="u-form-control-hidden">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Large Screens List-->
+  <section class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-section-5"
+    id="carousel_a8a1">
+
+    
+    <!-- start -->
+    <div class="u-clearfix u-sheet u-sheet-1">
+
+      <!-- Container to divide the heading and list -->
+      <div class="u-align-center grid-list-section">
+      
+
+        <!-- Heading Grid -->
+        <div>
+          <div class="u-container-style u-custom-color-1 u-group u-radius-3 u-shape-round u-group-1">
+            <div class="u-container-layout u-container-layout-1">
+              <p class="u-custom-font u-font-montserrat u-text u-text-1">Hospital Name</p>
+              <p class="u-custom-font u-font-montserrat u-text u-text-2">ICU Beds</p>
+              <p class="u-custom-font u-font-montserrat u-text u-text-3">Oxygen Beds</p>
+              <p class="u-custom-font u-font-montserrat u-text u-text-4">Ventilator Beds</p>
+              <p class="u-custom-font u-font-montserrat u-text u-text-5">Contact Number</p>
+            </div>
+          </div>
+        </div>
+         <!-- End Heading -->
+
+        <!-- List Grid-->
+        
+        <div class="u-align-center grid-list">
+          <!-- Rows Separate Grid Begins -->
+          <!-- Element -->
+          <% results.forEach(function(hosp){ %>
+          <div class="u-container-style u-list-item u-radius-21 u-repeater-item u-shape-round u-white u-list-item-1"
+            data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
+            data-animation-direction="">
+            
+            <div class="u-container-layout u-similar-container u-container-layout-2">
+              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-6"><%= hosp.contact %></p>
+              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-7"><%= hosp.venbeds %></p>
+              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-8"><%= hosp.oxybeds %></p>
+              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-9"><%= hosp.icubeds %></p>
+              <p class="u-custom-font u-font-montserrat u-text u-text-10"><%= hosp.name %><br>Address: <%= hosp.address %> <br>Pincode: <%= hosp.pincode %></p>
+            </div>
+            
+          </div>
+          <% }); %>
+          
+          <!-- Element Ends -->  
+        </div>
+        
+        <!-- List Division End-->
+    
+      </div>
+
+      <!-- End List -->
+    </div>
+    
+
+  </section>
+
+
+</body>
+
+</html>
