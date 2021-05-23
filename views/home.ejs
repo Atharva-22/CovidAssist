@@ -86,7 +86,7 @@
             </li>
             <li class="u-nav-item"><a
                 class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
-                style="padding: 10px 20px;">COVID-19 Guidlines</a>
+                href="/guidelines" style="padding: 10px 20px;">COVID-19 Guidlines</a>
             </li>
             <li class="u-nav-item"><a
                 class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
@@ -164,14 +164,13 @@
   <section class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-section-5"
     id="carousel_a8a1">
 
-    
+
     <!-- start -->
     <div class="u-clearfix u-sheet u-sheet-1">
 
       <!-- Container to divide the heading and list -->
       <div class="u-align-center grid-list-section">
-      
-
+        <% if((dummy !=="") && (dummy !=="Select District")){ %>
         <!-- Heading Grid -->
         <div>
           <div class="u-container-style u-custom-color-1 u-group u-radius-3 u-shape-round u-group-1">
@@ -184,42 +183,62 @@
             </div>
           </div>
         </div>
-         <!-- End Heading -->
+        <% } %>
+
+        <!-- End Heading -->
 
         <!-- List Grid-->
-        
+
         <div class="u-align-center grid-list">
           <!-- Rows Separate Grid Begins -->
           <!-- Element -->
           <% results.forEach(function(hosp){ %>
-          <div class="u-container-style u-list-item u-radius-21 u-repeater-item u-shape-round u-white u-list-item-1"
-            data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
-            data-animation-direction="">
-            
-            <div class="u-container-layout u-similar-container u-container-layout-2">
-              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-6"><%= hosp.contact %></p>
-              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-7"><%= hosp.venbeds %></p>
-              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-8"><%= hosp.oxybeds %></p>
-              <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-9"><%= hosp.icubeds %></p>
-              <p class="u-custom-font u-font-montserrat u-text u-text-10"><%= hosp.name %><br>Address: <%= hosp.address %> <br>Pincode: <%= hosp.pincode %></p>
+            <div class="u-container-style u-list-item u-radius-21 u-repeater-item u-shape-round u-white u-list-item-1"
+              data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
+              data-animation-direction="">
+
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-6">
+                  <%= hosp.contact %>
+                </p>
+                <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-7">
+                  <%= hosp.venbeds %>
+                </p>
+                <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-8">
+                  <%= hosp.oxybeds %>
+                </p>
+                <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-9">
+                  <%= hosp.icubeds %>
+                </p>
+                <p class="u-custom-font u-font-montserrat u-text u-text-10">
+                  <%= hosp.name %><br>Address: <%= hosp.address %> <br>Pincode: <%= hosp.pincode %>
+                </p>
+              </div>
+
             </div>
-            
-          </div>
-          <% }); %>
-          
-          <!-- Element Ends -->  
+            <% }); %>
+
+              <!-- Element Ends -->
         </div>
-        
+
         <!-- List Division End-->
-    
+
       </div>
 
       <!-- End List -->
     </div>
-    
+
 
   </section>
-
+  <footer class="u-align-center u-clearfix  u-footer"
+    style="background-color: rgb(56, 56, 56); color: rgb(255, 255, 255);" id="sec-255b">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-custom-font u-font-montserrat u-text u-text-1">CovidAssist</h2>
+      <p class="u-custom-font u-font-montserrat u-text u-text-2">Copyright © 2021 CovidAssist.co. | <span
+          style="font-weight: 400;"></span>All rights reserved
+      </p>
+    </div>
+  </footer>
 
 </body>
 

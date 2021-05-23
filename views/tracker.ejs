@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 
@@ -19,7 +18,6 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
 
   <style>
-    
     .cols4 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -43,7 +41,6 @@
         "."
         ".";
     }
-
   </style>
 
 
@@ -64,7 +61,7 @@
             </li>
             <li class="u-nav-item"><a
                 class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
-                style="padding: 10px 20px;">COVID-19 Guidlines</a>
+                href="/guidelines" style="padding: 10px 20px;">COVID-19 Guidlines</a>
             </li>
             <li class="u-nav-item"><a
                 class="u-active-palette-2-light-3 u-button-style u-hover-white u-nav-link u-radius-17 u-text-active-custom-color-5 u-text-hover-custom-color-5 u-white"
@@ -96,7 +93,9 @@
             data-animation-direction="">
             <div class="u-container-layout u-similar-container u-container-layout-1">
               <h1 class="u-custom-font u-font-lato u-text u-text-white u-title u-text-2" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="2000"><%= india.totalCases %></h1>
+                data-animation-event="scroll" data-animation-duration="2000">
+                <%= india.totalCases %>
+              </h1>
               <p class="u-custom-font u-font-montserrat u-text u-text-white u-text-3">Overall Cases</p>
             </div>
           </div>
@@ -105,7 +104,9 @@
             data-animation-direction="">
             <div class="u-container-layout u-similar-container u-container-layout-2">
               <h1 class="u-custom-font u-font-lato u-text u-text-white u-title u-text-4" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="2000"><%= india.activeCases %></h1>
+                data-animation-event="scroll" data-animation-duration="2000">
+                <%= india.activeCases %>
+              </h1>
               <p class="u-custom-font u-font-montserrat u-text u-text-white u-text-5">Overall Active Cases</p>
             </div>
           </div>
@@ -114,7 +115,9 @@
             data-animation-direction="">
             <div class="u-container-layout u-similar-container u-container-layout-3">
               <h1 class="u-custom-font u-font-lato u-text u-text-white u-title u-text-6" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="2000"><%= india.recovered %></h1>
+                data-animation-event="scroll" data-animation-duration="2000">
+                <%= india.recovered %>
+              </h1>
               <p class="u-custom-font u-font-montserrat u-text u-text-white u-text-7">Total Recove​red</p>
             </div>
           </div>
@@ -123,7 +126,9 @@
             data-animation-direction="">
             <div class="u-container-layout u-similar-container u-container-layout-4">
               <h1 class="u-custom-font u-font-lato u-text u-text-white u-title u-text-8" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="2000"><%= india.deaths %></h1>
+                data-animation-event="scroll" data-animation-duration="2000">
+                <%= india.deaths %>
+              </h1>
               <p class="u-custom-font u-font-montserrat u-text u-text-white u-text-9">Deceased</p>
             </div>
           </div>
@@ -148,22 +153,30 @@
           <!-- Row1 -->
           <!-- 4 Cols in each row Div -->
           <div class="cols4">
-            
+
 
             <div
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-1">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Maharashtra
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[20].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[20].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[20].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[20].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[20].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[20].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[20].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[20].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -172,15 +185,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Karnataka
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[15].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[15].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[15].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[15].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[15].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[15].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[15].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[15].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -188,15 +209,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Kerala</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[16].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[16].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[16].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[16].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[16].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[16].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[16].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[16].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -204,15 +233,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Tamil Nadu</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[30].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[30].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[30].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[30].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[30].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[30].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[30].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[30].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -230,15 +267,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Uttar Pradesh
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[34].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[34].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[34].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[34].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[34].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[34].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[34].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[34].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -247,16 +292,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Andhra Pradesh
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[1].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[1].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[1].newInfected %>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[1].newInfected %>
                 </h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[1].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[1].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[1].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[1].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -264,15 +316,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">West Bengal</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[35].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[35].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[35].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[35].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[35].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[35].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[35].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[35].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -280,15 +340,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Chhattisgarh</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[6].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[6].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[6].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[6].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[6].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[6].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[6].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[6].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -303,15 +371,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Rajasthan
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[28].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[28].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[28].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[28].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[28].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[28].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[28].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[28].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -320,16 +396,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Gujarat
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[10].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[10].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[10].newInfected %>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[10].newInfected %>
                 </h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[10].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[10].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[10].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[10].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -337,15 +420,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Madhya Pradesh</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[19].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[19].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[19].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[19].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[19].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[19].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[19].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[19].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -353,15 +444,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Haryana</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[11].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[11].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[11].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[11].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[11].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[11].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[11].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[11].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -376,15 +475,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Bihar
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[4].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[4].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[4].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[4].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[4].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[4].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[4].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[4].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -393,16 +500,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Odisha
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[25].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[25].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[25].newInfected %>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[25].newInfected %>
                 </h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[25].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[25].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[25].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[25].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -410,15 +524,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Punjab</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[27].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[27].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[27].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[27].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[27].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[27].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[27].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[27].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -426,15 +548,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Assam</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[3].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[3].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[3].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[3].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[3].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[3].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[3].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[3].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -449,15 +579,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Jharkhand
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[14].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[14].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[14].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[14].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[14].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[14].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[14].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[14].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -466,32 +604,48 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Uttarakhand
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[33].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[33].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[33].newInfected %>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[33].newInfected %>
                 </h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[33].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[33].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[33].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[33].newDeceased %>
+                </h6>
               </div>
             </div>
 
             <div
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Himachal Pradesh</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[12].activeCases %></h6>
+                <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Himachal Pradesh
+                </h4>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[12].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[12].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[12].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[12].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[12].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[12].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[12].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -499,15 +653,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Goa</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[9].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[9].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[9].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[9].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[9].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[9].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[9].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[9].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -521,15 +683,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-1">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Puducherry</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[26].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[26].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[26].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[26].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[26].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[26].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[26].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[26].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -538,16 +708,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Tripura
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[32].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[32].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[32].newInfected %>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[32].newInfected %>
                 </h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[32].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[32].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[32].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[32].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -555,15 +732,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Manipur</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[21].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[21].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[21].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[21].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[21].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[21].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[21].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[21].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -571,15 +756,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Meghalaya</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[22].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[22].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[22].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[22].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[22].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[22].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[22].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[22].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -594,15 +787,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-1">Arunachal Pradesh
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2"><%= result[2].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-2">
+                  <%= result[2].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-3">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-4">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5"><%= result[2].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6"><%= result[2].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-5">
+                  <%= result[2].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-6">
+                  <%= result[2].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-7">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-8">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9"><%= result[2].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-9">
+                  <%= result[2].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -611,16 +812,23 @@
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-10">Nagaland
                 </h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11"><%= result[24].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-11">
+                  <%= result[24].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-12">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-13">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14"><%= result[24].newInfected %>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-14">
+                  <%= result[24].newInfected %>
                 </h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15"><%= result[24].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-15">
+                  <%= result[24].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-16">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-17">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18"><%= result[24].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-18">
+                  <%= result[24].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -628,15 +836,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-19">Sikkim</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20"><%= result[29].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-20">
+                  <%= result[29].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-21">Active cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-22">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23"><%= result[29].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24"><%= result[29].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-23">
+                  <%= result[29].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-24">
+                  <%= result[29].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-25">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-26">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27"><%= result[29].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-27">
+                  <%= result[29].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -644,15 +860,23 @@
               class="u-align-center u-container-style u-list-item u-radius-22 u-repeater-item u-shape-round u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h4 class="u-align-center u-custom-font u-font-lato u-text u-text-grey-80 u-text-28">Mizoram</h4>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29"><%= result[23].activeCases %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-black u-text-29">
+                  <%= result[23].activeCases %>
+                </h6>
                 <h6 class="u-align-right u-text u-text-30">Active Cases:</h6>
                 <p class="u-align-right u-custom-font u-font-montserrat u-small-text u-text u-text-variant u-text-31">
                   Infected:</p>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32"><%= result[23].newInfected %></h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33"><%= result[23].newRecovered %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-6 u-text-32">
+                  <%= result[23].newInfected %>
+                </h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-4 u-text-33">
+                  <%= result[23].newRecovered %>
+                </h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-34">Recovered:</h6>
                 <h6 class="u-align-right u-custom-font u-font-montserrat u-text u-text-35">Deceased:</h6>
-                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36"><%= result[23].newDeceased %></h6>
+                <h6 class="u-custom-font u-font-montserrat u-text u-text-custom-color-5 u-text-36">
+                  <%= result[23].newDeceased %>
+                </h6>
               </div>
             </div>
 
@@ -667,6 +891,15 @@
 
     </div>
   </section>
+  <footer class="u-align-center u-clearfix  u-footer"
+    style="background-color: rgb(56, 56, 56); color: rgb(255, 255, 255);" id="sec-255b">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-custom-font u-font-montserrat u-text u-text-1">CovidAssist</h2>
+      <p class="u-custom-font u-font-montserrat u-text u-text-2">Copyright © 2021 CovidAssist.co. | <span
+          style="font-weight: 400;"></span>All rights reserved
+      </p>
+    </div>
+  </footer>
 
 </body>
 
