@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const https = require("https");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const session = require("express-session");
@@ -89,7 +90,17 @@ app.get("/signup", function (req, res) {
 });
 
 app.get("/tracker", function (req, res) {
-    res.render("tracker");
+    const url = "https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true";
+    https.get(url,function(response){
+        console.log(response.statusCode);
+        response.on("data",function(data){
+          const x = JSON.parse(data);
+          const y = x.regionData;
+          //console.log(y);
+          res.render("tracker",{result : y, india:x});
+        });
+      });
+    //res.render("tracker");
 });
 
 
